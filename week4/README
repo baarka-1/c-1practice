@@ -1,0 +1,19 @@
+C# File Operations & Data Management
+1. Creating & Writing File
+Initializes a new text file named Index.txt and uses StreamWriter to write initial text lines (Welcome Jamhuuriya, Welcome CA244, computer application) into the file before safely closing the stream.   
+creating file and processing and close.png
+
+2. Reading & Populating ListBox
+Checks whether Index.txt exists, reads all text lines at once into an array using File.ReadAllLines(), clears listBox1, and iterates through the lines to display them in the user interface.
+
+3. Deleting Selected Item & Syncing File
+Verifies that an item is selected (SelectedIndex != -1), removes the chosen item from listBox1, recreates Index.txt using File.CreateText(), and rewrites the remaining items back into the file to keep local storage synchronized.
+
+4. Deleting Entire File & Resetting UI
+Checks for the existence of Index.txt, completely deletes the physical file from disk using File.Delete(), clears all items from listBox1, and notifies the user with a MessageBox.   
+delete file.png
+
+
+5. Exception & Error Handling
+Encloses all file operations within try-catch blocks to capture unexpected runtime errors (such as missing path references or file lock issues) and displays clear error details via MessageBox.Show().   
+delete file.png
