@@ -1,0 +1,6 @@
+
+1 inputs Declaration & ValidationThe program retrieves the guest's name from the text box and uses int.TryParse to securely validate numeric inputs for age, nights, and guests, while displaying an error message if the name field is left blank.
+   2. Room Selection & Variable SetupIt initializes room variables (roomType, rate, maxCapacity) and checks which RadioButton (radiostandard, radionormal, or radiohight) the user selected to automatically assign the corresponding capacity and room name.  
+    3. Strict Input Boundary RulesIt enforces strict validation rules to ensure the age is between 18 and 90, nights are between 1 and 30, guests are between 1 and 6, and at least one room type is selected before proceeding. 
+      4. Switch Statement for Room RatesIt uses a switch statement based on the roomType to precisely assign the correct night rate (Standard: $50, Normal: $80, High: $130). 
+        5. Capacity Check & Cost CalculationIt checks if the number of guests exceeds the room's maximum capacity; if it does, it rejects the booking and logs the rejection details in the ListBox, otherwise, it calculates the base cost and applies length-of-stay discounts.
